@@ -1,0 +1,252 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a:hover {
+  color: #8b3a3a;
+}
+
+/* ===============================
+   HERO
+================================ */
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-img-card {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.hero-img-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width: 992px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: #8b3a3a;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #6e2e2e;
+}
+
+.btn-outline {
+  border: 1px solid #8b3a3a;
+  color: #8b3a3a;
+}
+
+.btn-outline:hover {
+  background: #8b3a3a;
+  color: #fff;
+}
+
+/* ===============================
+   PRODUCTS GRID
+================================ */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.card-img-wrap {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-actions {
+  padding: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+/* ===============================
+   TESTIMONIALS
+================================ */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+  background: #fff;
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* ===============================
+   PAGE BANNER
+================================ */
+
+.page-banner {
+  background: #fff;
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===============================
+   PAYMENT LAYOUT
+================================ */
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+}
+
+@media(max-width: 992px) {
+  .payment-layout {
+    grid-template-columns: 1fr;
+  }
+}

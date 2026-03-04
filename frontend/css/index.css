@@ -1,0 +1,40 @@
+/* ===== HERO ===== */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-image img {
+  border-radius: 16px;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media(max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image img {
+    height: auto;
+  }
+}

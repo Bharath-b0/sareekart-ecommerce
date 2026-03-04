@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collections — SareeKart</title>
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/collections.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo">
+      <span class="logo-icon">🪷</span>
+      <span class="logo-text">Saree<span>Kart</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-link">
+          🛍 Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE BANNER -->
+<div class="page-banner">
+  <div class="container">
+    <h1>Our Collections</h1>
+    <p>Handpicked sarees from master weavers across India</p>
+  </div>
+</div>
+
+<!-- COLLECTIONS -->
+<section class="collections-section">
+  <div class="container">
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Sarees</button>
+      <button class="filter-btn" data-filter="silk">Silk</button>
+      <button class="filter-btn" data-filter="georgette">Georgette</button>
+      <button class="filter-btn" data-filter="cotton">Cotton Silk</button>
+      <button class="filter-btn" data-filter="chiffon">Chiffon</button>
+    </div>
+
+    <!-- LOADING -->
+    <div id="loading-state" class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading our beautiful collection...</p>
+    </div>
+
+    <!-- GRID (JS FILLS THIS) -->
+    <div class="products-grid" id="products-grid"></div>
+
+  </div>
+</section>
+
+<!-- ───────────────── FOOTER ───────────────── -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>🪷 SareeKart</h3>
+        <p>India’s finest handcrafted sarees.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Silk</a></li>
+          <li><a href="#">Cotton</a></li>
+          <li><a href="#">Bridal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 SareeKart. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/collections.js"></script>
+
+</body>
+</html>

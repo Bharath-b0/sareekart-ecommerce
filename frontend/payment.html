@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout — SareeKart</title>
+   <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+
+<!-- ───────────────── NAVBAR ───────────────── -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar-logo">
+      <span class="logo-icon">🪷</span>
+      <span class="logo-text">Saree<span>Kart</span></span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-link">
+          🛍 Cart <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-banner">
+  <div class="container">
+    <h1>Secure Checkout</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <a href="cart.html">Cart</a>
+      <span>›</span>
+      <span>Checkout</span>
+    </div>
+  </div>
+</div>
+
+<section class="payment-section">
+  <div class="container">
+    <div class="payment-layout">
+
+      <!-- Left: Payment Form -->
+      <div>
+        <!-- Shipping Info -->
+        <div class="payment-form-card" style="margin-bottom:24px">
+          <h2>📦 Shipping Information</h2>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Priya" required/>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Sharma" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="priya@example.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210" required/>
+          </div>
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" placeholder="Street address" required/>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" placeholder="Chennai" required/>
+            </div>
+            <div class="form-group">
+              <label for="pincode">Pincode</label>
+              <input type="text" id="pincode" placeholder="600001" required/>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment Details -->
+        <div class="payment-form-card">
+          <h2>💳 Payment Details</h2>
+
+          <div class="payment-tabs">
+            <button class="pay-tab active" data-tab="card">Credit / Debit Card</button>
+            <button class="pay-tab" data-tab="upi">UPI</button>
+            <button class="pay-tab" data-tab="cod">Cash on Delivery</button>
+          </div>
+
+          <form id="payment-form">
+            <!-- Card Panel -->
+            <div class="pay-panel" id="panel-card">
+              <div class="secure-badges">
+                <span class="secure-badge">🔒 SSL Secured</span>
+                <span class="secure-badge">✅ PCI DSS</span>
+                <span>Your card details are encrypted</span>
+              </div>
+              <div class="form-group">
+                <label for="card-holder">Cardholder Name</label>
+                <input type="text" id="card-holder" placeholder="Name on card" required/>
+              </div>
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <div class="card-input-wrap">
+                  <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required/>
+                  <span class="card-icon">💳</span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="expiry">Expiry Date</label>
+                  <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required/>
+                </div>
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" placeholder="•••" maxlength="4" required/>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPI Panel -->
+            <div class="pay-panel" id="panel-upi" style="display:none">
+              <div class="form-group">
+                <label for="upi-id">UPI ID</label>
+                <input type="text" id="upi-id" placeholder="yourname@upi"/>
+              </div>
+              <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:16px">
+                Supported: GPay, PhonePe, Paytm, BHIM
+              </p>
+            </div>
+
+            <!-- COD Panel -->
+            <div class="pay-panel" id="panel-cod" style="display:none">
+              <div style="padding:20px;background:var(--cream);border-radius:12px;text-align:center">
+                <div style="font-size:2.5rem;margin-bottom:12px">🏠</div>
+                <p style="color:var(--text-mid);font-size:0.9rem">Pay with cash when your order arrives. Available for orders up to ₹20,000.</p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="pay-btn" style="width:100%;justify-content:center;margin-top:8px">
+              🔒 Pay Now
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Order Summary -->
+      <div class="order-summary-card">
+        <h3>Order Summary</h3>
+        <div id="order-items">
+          <p style="color:var(--text-light);font-size:0.88rem">Loading items...</p>
+        </div>
+        <div class="order-total" id="order-total">
+          <span>Total</span>
+          <span>—</span>
+        </div>
+        <div style="margin-top:20px;padding:14px;background:var(--cream);border-radius:10px;font-size:0.8rem;color:var(--text-light)">
+          <div style="margin-bottom:6px">🚚 Free shipping on orders above ₹5,000</div>
+          <div style="margin-bottom:6px">↩️ 7-day easy returns</div>
+          <div>📦 Packed with care</div>
+        </div>
+        <div style="margin-top:16px;border-top:1px solid var(--cream-dark);padding-top:16px;font-size:0.78rem;color:var(--text-light);text-align:center">
+          🔒 256-bit SSL encryption · Your data is safe
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────── FOOTER ───────────────── -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>🪷 SareeKart</h3>
+        <p>India’s finest handcrafted sarees.</p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Silk</a></li>
+          <li><a href="#">Cotton</a></li>
+          <li><a href="#">Bridal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 SareeKart. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/payment.js"></script>
+</body>
+</html>

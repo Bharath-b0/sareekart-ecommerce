@@ -1,0 +1,64 @@
+/* ================= OOPS / DEMO GATEWAY PAGE ================= */
+
+.oops-section {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.oops-card {
+  background: #fff;
+  padding: 50px 60px;
+  border-radius: 22px;
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+}
+
+.oops-icon {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.oops-card h1 {
+  font-size: 28px;
+  margin-bottom: 18px;
+  color: var(--maroon);
+}
+
+.oops-card p {
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+.payment-providers {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.provider-badge {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: var(--cream);
+  font-size: 13px;
+  border: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.provider-badge:hover {
+  background: #f49a9a;
+  color: #ffffff;
+  border-color: #8b3a3a;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .oops-card {
+    padding: 40px 24px;
+  }
+}

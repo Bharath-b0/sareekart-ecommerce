@@ -1,0 +1,78 @@
+/* ===== NAVBAR ===== */
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: #8b3a3a;
+}
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.cart-count {
+  background: #8b3a3a;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 1;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* ===== PAGE BANNER ===== */
+
+.page-banner {
+  background: #fff;
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #fff;
+  padding: 60px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+@media(max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
