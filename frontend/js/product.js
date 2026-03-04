@@ -26,11 +26,15 @@ async function loadProduct() {
   container.innerHTML = `<div class="loading-state"><div class="spinner"></div><p>Loading product...</p></div>`;
 
   try {
-    const response = await fetch(`${CONFIG.API_BASE_URL}/api/products/${productId}`);
-    if (!response.ok) throw new Error("Product not found");
+    // const response = await fetch(`${CONFIG.API_BASE_URL}/api/products/${productId}`);
+    // if (!response.ok) throw new Error("Product not found");
 
+    // const data = await response.json();
+    // const product = data.data;
+    const response = await fetch("data/products.json");
+    if (!response.ok) throw new Error("Product not found");
     const data = await response.json();
-    const product = data.data;
+    const product = data.find(p => p._id === productId);
 
     // Update page title
     document.title = `${product.name} — SareeKart`;

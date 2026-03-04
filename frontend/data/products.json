@@ -1,0 +1,145 @@
+[
+{
+"_id":"1",
+"name":"Banarasi Bridal Silk Saree",
+"price":12500,
+"category":"silk",
+"fabric":"Banarasi Silk",
+"color":"Royal Red",
+"imageUrl":"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+"description":"Traditional Banarasi silk saree woven with intricate gold zari motifs. Perfect for weddings, festive occasions and bridal wear.",
+"inStock":true
+},
+
+{
+"_id":"2",
+"name":"Kanjivaram Pure Silk Saree",
+"price":14900,
+"category":"silk",
+"fabric":"Kanjivaram Silk",
+"color":"Deep Maroon",
+"imageUrl":"https://images.unsplash.com/photo-1594938298603-c8148c4b4e08?w=600&q=80",
+"description":"Elegant Kanjivaram silk saree featuring rich temple borders and luxurious texture. Ideal for traditional ceremonies.",
+"inStock":true
+},
+
+{
+"_id":"3",
+"name":"Chanderi Cotton Silk Saree",
+"price":4200,
+"category":"cotton",
+"fabric":"Cotton Silk",
+"color":"Beige Gold",
+"imageUrl":"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+"description":"Lightweight Chanderi cotton silk saree with delicate woven patterns. Comfortable for daily wear and festive gatherings.",
+"inStock":true
+},
+
+{
+"_id":"4",
+"name":"Georgette Party Wear Saree",
+"price":3800,
+"category":"georgette",
+"fabric":"Georgette",
+"color":"Blush Pink",
+"imageUrl":"https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",
+"description":"Stylish georgette saree designed for evening parties and modern celebrations with elegant drape and soft texture.",
+"inStock":true
+},
+
+{
+"_id":"5",
+"name":"Designer Chiffon Saree",
+"price":3500,
+"category":"chiffon",
+"fabric":"Chiffon",
+"color":"Lavender",
+"imageUrl":"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+"description":"Beautiful chiffon saree with delicate embroidery work and smooth flowing fabric perfect for receptions and parties.",
+"inStock":true
+},
+
+{
+"_id":"6",
+"name":"Soft Silk Traditional Saree",
+"price":6900,
+"category":"silk",
+"fabric":"Soft Silk",
+"color":"Emerald Green",
+"imageUrl":"https://images.unsplash.com/photo-1594938298603-c8148c4b4e08?w=600&q=80",
+"description":"Premium soft silk saree with traditional zari borders and vibrant color ideal for festive occasions.",
+"inStock":true
+},
+
+{
+"_id":"7",
+"name":"Paithani Wedding Saree",
+"price":17500,
+"category":"silk",
+"fabric":"Paithani Silk",
+"color":"Peacock Blue",
+"imageUrl":"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+"description":"Luxurious Paithani silk saree with peacock motifs and rich golden pallu crafted by skilled artisans.",
+"inStock":true
+},
+
+{
+"_id":"8",
+"name":"Printed Cotton Daily Wear Saree",
+"price":1900,
+"category":"cotton",
+"fabric":"Pure Cotton",
+"color":"Sky Blue",
+"imageUrl":"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+"description":"Comfortable cotton saree with elegant printed patterns suitable for daily wear and office use.",
+"inStock":true
+},
+
+{
+"_id":"9",
+"name":"Festive Organza Saree",
+"price":5200,
+"category":"silk",
+"fabric":"Organza Silk",
+"color":"Champagne Gold",
+"imageUrl":"https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&q=80",
+"description":"Modern organza silk saree featuring subtle shimmer and elegant embroidery perfect for festive occasions.",
+"inStock":true
+},
+
+{
+"_id":"10",
+"name":"Designer Net Saree",
+"price":4800,
+"category":"georgette",
+"fabric":"Net Fabric",
+"color":"Wine",
+"imageUrl":"https://images.unsplash.com/photo-1594938298603-c8148c4b4e08?w=600&q=80",
+"description":"Trendy designer net saree with stylish patterns and elegant blouse combination for modern celebrations.",
+"inStock":true
+},
+
+{
+"_id":"11",
+"name":"Traditional Temple Border Saree",
+"price":5600,
+"category":"silk",
+"fabric":"Art Silk",
+"color":"Mustard Yellow",
+"imageUrl":"https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80",
+"description":"Classic temple border saree inspired by South Indian traditions crafted with elegant detailing.",
+"inStock":true
+},
+
+{
+"_id":"12",
+"name":"Elegant Festival Saree",
+"price":4300,
+"category":"chiffon",
+"fabric":"Chiffon Silk Blend",
+"color":"Coral Orange",
+"imageUrl":"https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&q=80",
+"description":"Lightweight chiffon saree designed for festive celebrations offering comfort and graceful appearance.",
+"inStock":true
+}
+]

@@ -8,11 +8,14 @@ async function loadProducts() {
     loading.style.display = "block";
     grid.innerHTML = "";
 
-    const response = await fetch(`${CONFIG.API_BASE_URL}/api/products`);
-    if (!response.ok) throw new Error("Failed to fetch");
+    // const response = await fetch(`${CONFIG.API_BASE_URL}/api/products`);
+    // if (!response.ok) throw new Error("Failed to fetch");
 
-    const data = await response.json();
-    allProducts = data.data || [];
+    // const data = await response.json();
+    // allProducts = data.data || [];
+    const response = await fetch("data/products.json");
+const data = await response.json();
+allProducts = data;
 
     loading.style.display = "none";
 
